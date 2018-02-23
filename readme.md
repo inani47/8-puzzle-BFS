@@ -31,9 +31,11 @@ This software is released under the BSD-2 License, see [LICENSE](LICENSE).
 
 The 100000 generated nodes and their parents can be found in the text file Nodes.txt in the output folder.
 
-Example output:
+Example output: ![example_solution](https://user-images.githubusercontent.com/31521157/36577889-20007702-1828-11e8-88d8-b563aaa269bc.png)
 
-The number of possible positions of an 8-puzzle is 9! = 362880. Half of these cannot be reached from a given starting position, so there's really only 181440 possibilities. Below is a the output which shows that if the code is not stopped at the goal state then this code generates all possible nodes and stops when there are new no nodes left to be explored (openList is empty). Since the program stops at the 181440th iteration of the while loop, it proves that there are no duplicate nodes being created. Below is a picture of the following:
+The number of possible positions of an 8-puzzle is 9! = 362880. Half of these cannot be reached from a given starting position, so there's really only 181440 possibilities. Below is a the output which shows that if the code is not stopped at the goal state then this code generates all possible nodes and stops when there are new no nodes left to be explored (openList is empty). Since the program stops at the 181440th iteration of the while loop, it proves that there are no duplicate nodes being created. Below is a picture of the following: 
+![totalnodes](https://user-images.githubusercontent.com/31521157/36577913-39477120-1828-11e8-9d1e-771ef2704097.png)
+
 
 
 
