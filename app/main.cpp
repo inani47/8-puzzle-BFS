@@ -110,6 +110,7 @@ int main() {
   bool goalFound = false;
   int count = 0;
   vector<Node*> solution;
+  cout << "Searching for solution..." endl;
   while (!openList.empty() && !goalFound) {
     Node* currentNode = openList.front();
     closedList.push(currentNode);
@@ -134,8 +135,8 @@ int main() {
 
     }
     count++;
-    cout << "No. of nodes in closed list: " << count << endl;
   }
+  cout << "No. of nodes in closed list: " << count << endl;
 //  printToFile(closedList);  // uncomment this line to print node in text file
 }
 
