@@ -21,6 +21,10 @@ make
 
 This software is released under the BSD-2 License, see [LICENSE](LICENSE).
 
+## Output
+
+The number of possible positions of an 8-puzzle is 9! = 362880. Half of these cannot be reached from a given starting position, so there's really only 181440 possibilities. Below is a the output which shows that if the code is not stopped at the goal state then this code generates all possible nodes and stops when there are new no nodes left to be explored (openList is empty). Since the program stops at the 181440th iteration of the while loop, it proves that there are no duplicate nodes being created. Below is a picture of the following:
+
 
 
 
