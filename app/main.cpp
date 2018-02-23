@@ -49,7 +49,6 @@ bool contains(std::queue<Node*> q, Node* n) {
 void traceSolution(vector<Node*> sol, Node* g) {
   Node* curr = g;
   sol.push_back(g);
-  cout << sol.size() << endl;
   while (curr->parent != NULL) {
     curr = curr->parent;
     sol.push_back(curr);
