@@ -28,6 +28,7 @@
 #include <Node.h>
 
 using namespace std;
+
 void Node::printPuzzle() {
   int count = 0;
   for (auto i : puzzle) {
@@ -45,15 +46,7 @@ int Node::findZero() {
 }
 
 
-    bool Node::isGoal() {
-  bool goalFound = false;
-  if (puzzle == goal)
-        goalFound = true;
-  return goalFound;
-}
-
-
-    void Node::moveUp() {
+void Node::moveUp() {
   int zPos = findZero();
   vector<int> temp = puzzle;
   if (zPos != 0 && zPos != 1 && zPos != 2)

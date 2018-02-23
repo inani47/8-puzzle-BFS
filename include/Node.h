@@ -38,19 +38,15 @@
 using namespace std;
 class Node {
  public:
-
   vector<Node*> children;
   vector<int> puzzle;
-  vector<int> goal = { 1, 2, 3, 4, 5, 6, 7, 8, 0 };
   Node *parent;
-
   Node(vector<int> _puzzle, Node *_parent) {
     puzzle = _puzzle;
     parent = _parent;
   }
   void printPuzzle();
   int findZero();
-  bool isGoal();
   void moveUp();
   void moveDown();
   void moveRight();
